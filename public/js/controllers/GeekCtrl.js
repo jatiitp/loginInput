@@ -46,8 +46,8 @@ angular.module('GeekCtrl', []).controller('GeekController', function($scope,$htt
     $scope.employeeData = {
         firstName : "",
         lastName : "",
-        age : "",
-        designation : "",
+        email : "",
+        password : "",
 
     };
    
@@ -58,17 +58,33 @@ angular.module('GeekCtrl', []).controller('GeekController', function($scope,$htt
         console.log(employeeData);
 
         if (!isString(employeeData.firstName)) {
-            $scope.snackBar("Only characters is allowed");
+            $scope.snackBarError("Only characters is allowed in First Name");
             return;
         }
 
         if (!isString(employeeData.lastName)) {
-            $scope.snackBar("Only characters is allowed");
+            $scope.snackBarError("Only characters is allowed in Lst Name");
             return;
         }
 
-        if (employeeData.age > 60 || employeeData.age < 18) {
-            $scope.snackBar("Age should be greater than 18 and less than 60");
+        if (!isEmailValid(employeeData.email)) {
+            $scope.snackBarError("Please enter a valid Email address");
+            return;
+        }
+
+        if (!(employeeData.password)) {
+            $scope.snackBarError("Only numbers are allowed in Password");
+            return;
+        }
+
+        if ((employeeData.password.length < 8)) {
+            $scope.snackBarError("Password - Must be at least 8 characters long");
+            return;
+        }
+
+        if (!employeeData.firstName || !employeeData.lastName ||
+            !employeeData.email || !employeeData.password) {
+            $scope.snackBarError("All fields are Mandatory");
             return;
         }
         

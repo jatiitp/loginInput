@@ -1,84 +1,33 @@
 <div >
-  <div id="snackbar">{{snackHead}}</div>
-  <div id="snackBarError">{{snackHead}}</div>
-  <div class="container">
-    <div class="col-lg-12 all-page">
-        <div class="col-lg-12 top-head">Get Started Today!</div>
-        <div class="col-lg-12 login-form">
-            <div class="col-lg-6 input-data">
-                <label class="input-name">First Name</label>
-                <input  ng-model="employeeData.firstName" placeholder="First Name" type="text" ng-pattern ="/^[a-zA-Z\s]*$/" class="form-control"   aria-required="true" aria-invalid="false" >
-            </div>
-            <div class="col-lg-6 input-data">
-                <label class="input-name">Last Name</label>
-                <input  ng-model="employeeData.lastName" placeholder="Last Name" type="text" ng-pattern ="/^[a-zA-Z\s]*$/" class="form-control"   aria-required="true" aria-invalid="false" >
-            </div>
-            <div class="col-lg-6 input-data">
-                <label class="input-name">Email Address</label>
-                <input id="email" ng-model="employeeData.email" placeholder="Email Address" type="email" class="form-control"   aria-required="true" aria-invalid="false" >
-            </div>
-            <div class="col-lg-6 input-data">
-                <label class="input-name" >Password</label>
-                <input  ng-model="employeeData.password" placeholder="Password" type="password" ng-pattern ="/^[a-zA-Z0-9\s]*$/" class="form-control" aria-required="true" aria-invalid="false"  data-toggle="tooltip" data-placement="bottom" title="Password - Must be at least 8 characters long. Only numbers (0-9) and letters (A-Z, a-z) are allowed." aria-hidden="true">
-            </div>
-            <div class="col-lg-12 add-main">
-                <div class="">
-                    <button class="btn btn-success add-btn col-lg-12" ng-click="addMore(employeeData)">Claim Your Free Trial <i class="fas fa-caret-right"></i></button>
+    <div id="snackbar">{{snackHead}}</div>
+    <div id="snackBarError">{{snackHead}}</div>
+    <div class="container">
+        <div class="col-lg-12 all-page">
+            <div class="col-lg-12 top-head">Get Started Today!</div>
+            <div class="col-lg-12 login-form">
+                <div class="col-lg-6 input-data">
+                    <label class="input-name">First Name</label>
+                    <input  ng-model="employeeData.firstName" placeholder="First Name" type="text" ng-pattern ="/^[a-zA-Z\s]*$/" class="form-control"   aria-required="true" aria-invalid="false" >
+                </div>
+                <div class="col-lg-6 input-data">
+                    <label class="input-name">Last Name</label>
+                    <input  ng-model="employeeData.lastName" placeholder="Last Name" type="text" ng-pattern ="/^[a-zA-Z\s]*$/" class="form-control"   aria-required="true" aria-invalid="false" >
+                </div>
+                <div class="col-lg-6 input-data">
+                    <label class="input-name">Email Address</label>
+                    <input id="email" ng-model="employeeData.email" placeholder="Email Address" type="email" class="form-control"   aria-required="true" aria-invalid="false" >
+                </div>
+                <div class="col-lg-6 input-data">
+                    <label class="input-name" >Password</label>
+                    <input  ng-model="employeeData.password" placeholder="Password" type="password" ng-pattern ="/^[a-zA-Z0-9\s]*$/" class="form-control" aria-required="true" aria-invalid="false"  data-toggle="tooltip" data-placement="bottom" title="Password - Must be at least 8 characters long. Only numbers (0-9) and letters (A-Z, a-z) are allowed." aria-hidden="true">
+                </div>
+                <div class="col-lg-12 add-main">
+                    <div class="">
+                        <button class="btn btn-success add-btn col-lg-12" ng-click="addMore(employeeData)">Claim Your Free Trial <i class="fas fa-caret-right"></i></button>
+                    </div>
                 </div>
             </div>
+            <div class="col-lg-12 last-line">You are agreeing to our <span class="terms">Terms and Services</span></div>
         </div>
-        <div class="col-lg-12 last-line">You are agreeing to our <span class="terms">Terms and Services</span></div>
     </div>
-  </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div >
-  <div id="snackbar">{{snackHead}}</div>
-  <div class="container">
-    <div>Add Employee Details</div>
-    <div class="col-lg-12">
-        <div class="col-lg-6 input-data">
-            <label class="input-name">First Name</label>
-            <input id="Name" ng-model="employeeData.firstName" placeholder="First Name" type="text" ng-pattern ="/^[a-zA-Z\s]*$/" class="form-control"   aria-required="true" aria-invalid="false" >
-        </div>
-        <div class="col-lg-6 input-data">
-            <label class="input-name">Last Name</label>
-            <input id="Name" ng-model="employeeData.lastName" placeholder="Last Name" type="text" ng-pattern ="/^[a-zA-Z\s]*$/" class="form-control"   aria-required="true" aria-invalid="false" >
-        </div>
-        <div class="form-group col-md-6">
-            <label class="control-label">Designation</label>
-            <div class="inputBox">
-                <select class="soflow" ng-model="employeeData.designation">
-                    <option value="Assistant Manager">Assistant Manager</option>
-                    <option value="Manager">Manager</option>
-                    <option value="Software Engineer">Software Engineer</option>
-                </select>
-            </div>
-        </div>
-        <div class="col-lg-6 input-data">
-            <label class="input-name">Age</label>
-            <input id="Name" ng-model="employeeData.age" placeholder="Age" class="form-control"   aria-required="true" aria-invalid="false" >
-        </div>
-        <div class="col-lg-12 add-main">
-            <div class="">
-                <button class="btn btn-info add-btn" ng-click="addMore(employeeData)">Add</button>
-            </div>
-        </div>
-        
-    </div>
-  </div>
-</div>
- -->
